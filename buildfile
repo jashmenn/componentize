@@ -16,6 +16,9 @@ define "componentize" do
   manifest["Implementation-Vendor"] = COPYRIGHT
 
   compile.with 'org.scala-tools.sxr:sxr_2.7.6:jar:0.2.3'
+  compile.with 'log4j:log4j:jar:1.2.9'
+  compile.with 'commons-cli:commons-cli:jar:1.2'
+  compile.with 'commons-logging:commons-logging:jar:1.0.4'
 
   compile.dependencies << FileList['lib/*.jar']
 
